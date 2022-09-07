@@ -17,3 +17,16 @@ int main()
     }
     return 0;
 }
+
+//In FOR LOOP
+for(n;n<0;n/=10){
+    mod=n%10;
+    rev*=10+mod;
+}
+
+//DO..WHILE LOOP
+do{
+    mod=n%10;
+    rev*=10+mod;
+    n/=10;
+}while(n!=0);
