@@ -21,3 +21,25 @@ int main()
     printf("%s is Not Palindrome\n", str);
     return 0;
 }
+
+
+//Here is Another & Simple way to do it....
+
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    int  cmp;
+    char str1[100],str2[100];
+    printf("Enter Your String: ");
+    scanf("%s",&str1);
+    strcpy(str2,str1);
+    strrev(str1);
+    cmp = strcmp(str1,str2);
+    if (cmp==0){
+        printf("This is Palindrome String..");
+    }else{
+        printf("This is Not Palindrome String..");
+    }
+    return 0;
+}
