@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n,temp,pal,mod,rev=0;
+    int n,mod,rev=0;
     printf("Enter Your Number:- ");
     scanf("%d",&n);
     temp=n;
@@ -10,7 +10,7 @@ int main()
         rev=rev*10+mod;
         n/=10;
     }
-    if(rev==temp){
+    if(rev==n){
         printf("This is Palindrome Number");
     }else{
         printf("This is Not Palindrome Number");
